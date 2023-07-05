@@ -5,7 +5,7 @@ import { environment as env} from 'src/environments/environment';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
