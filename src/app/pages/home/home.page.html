@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Início</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Início</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div class="ion-padding">
+
+    <div class="container">
+      <h1>Busca de CEP</h1>
+      <p>Bem-vindo ao nosso site de busca de CEP. Com esta ferramenta, você pode encontrar facilmente informações sobre endereços através do Código de Endereçamento Postal (CEP).</p>
+      <p>Para usar a busca de CEP, basta digitar o CEP desejado no campo de busca abaixo e clicar no botão "Buscar". O sistema irá procurar na base de dados e exibir as informações disponíveis sobre o endereço associado ao CEP informado.</p>
+
+      <p class="ion-text-center">
+        <ion-searchbar [(ngModel)]="myCep" (search)="buscar()"></ion-searchbar>
+      </p>
+
+      <p>Após realizar a busca, os seguintes dados podem ser exibidos:</p>
+      <ul>
+        <li>Logradouro: Nome da rua, avenida ou estrada associada ao CEP.</li>
+        <li>Bairro: Nome do bairro onde se localiza o endereço.</li>
+        <li>Cidade: Nome da cidade ou município ao qual o CEP está vinculado.</li>
+        <li>Estado: Sigla do estado correspondente ao CEP.</li>
+        <li>País: O país ao qual o CEP pertence.</li>
+        <li>Informações adicionais: Detalhes adicionais sobre o endereço, se disponíveis.</li>
+      </ul>
+    </div>
+
+  </div>
+
+</ion-content>

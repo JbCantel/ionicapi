@@ -1,0 +1,7 @@
+{
+  "name": "ionicapi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
